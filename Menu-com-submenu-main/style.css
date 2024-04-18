@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin", sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+}
+
+.top-header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header {
+    background-color: white;
+    padding: 20px 4px;
+}
+
+.top-header .logo img{
+    max-width: 240px;
+}
+
+.top-header .btn-social button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.bottom-header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a{
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    transition: 0.3s;
+}
+
+.bottom-header nav ul li a:hover{
+    background-color: #ED6886;
+    color: rgb(88, 88, 88);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.425);
+}
+
+.drop-hover{
+    position: relative;
+}
+
+.drop-hover .drop{
+    position: absolute;
+    background-color: rgb(122, 122, 122);
+    width: 100%; 
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.drop-hover:hover .drop{
+    height: 230px;
+
+}
