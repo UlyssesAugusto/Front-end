@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(177, 177, 177);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.417);
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+    margin: 20px 0;
+}
+
+.skills .barras{
+    background-color: rgb(214, 214, 214);
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right, rgb(255, 115, 0), rgb(255, 0, 55));
+    position: absolute;
+}
+
+.html {
+    width: 80%;
+    animation: html 3s;
+}
+
+.css{
+    width: 65%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 30%;
+    animation: javascript 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
